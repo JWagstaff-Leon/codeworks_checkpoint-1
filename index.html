@@ -35,6 +35,7 @@
         <section id="hero">
             <div class="container">
                 <div class="row align-items-center py-5">
+                    <!-- TODO make this form play nice more -->
                     <!-- hero form -->
                     <div class="col-12 col-md-4 hero-form">
                         <h4 class="form-heading ps-1 pt-3">Feedback but gray</h4>
@@ -43,13 +44,14 @@
                                 <h4 class="text-primary">Feedback</h4>
                                 <div class="row px-4 mt-4">
                                     <input type="text" name="name" id="" placeholder="NAME" class="col-12" required>
-                                    <input type="text" name="email" id="" placeholder="EMAIL" class="col-12" required>
-                                    <input type="text" name="phone" id="" placeholder="PHONE" class="col-7">
+                                    <input type="email" name="email" id="" placeholder="EMAIL" class="col-12" required>
+                                    <input type="tel" name="phone" id="" placeholder="PHONE" class="col-7">
                                     <input type="text" name="extension" id="" placeholder="EXT" class="col-4 offset-1">
-                                    <input type="text" name="message" id="" placeholder="MESSAGE" class="col-12 flex-grow-1" required>
+                                    <textarea type="text" name="message" id="" placeholder="MESSAGE" class="col-12 flex-grow-1 mb-2" required></textarea>
                                     <div class="d-flex justify-content-between">
                                         <input type="checkbox" name="acceptance" id="" required>
-                                        <input type="submit" value="Send">
+                                        <label for="acceptance" class="mx-2">I agree that my message is not uncool, and that I send it in the spirit of coolness.</label>
+                                        <input type="submit" class="btn btn-primary text-light" value="Send">
                                     </div>
                                 </div>
                             </form>
@@ -93,7 +95,8 @@
                         </div>
                         <div class="d-flex align-items-center" title="twitter">
                             <i class="mdi mdi-twitter mdi-24px d-inline-block me-2"></i>
-                            <span>@MyCoolWebsiteThatDefinitelyActuallyExists</span>
+                            <span class="d-none d-lg-inline">@MyCoolWebsiteThatDefinitelyActuallyExists</span>
+                            <span class="d-inline d-lg-none">@MyExtantCoolWebsite</span>
                         </div>
                         <div class="d-flex align-items-center" title="website">
                             <i class="mdi mdi-web mdi-24px d-inline-block me-2"></i>
@@ -153,11 +156,10 @@
     <footer class="pt-4">
         <div class="container-fluid">
             <!-- NOTE brand -->
-            <div class="row bg-primary py-4">
-                <div class="col-10 offset-1 text-light">
-                    <h2>MY COOL SITE</h1>
-                    <h3>My cool site is here to give you my cool site.</h3>
-                </div>
+            <div class="row bg-primary py-4 justify-content-between align-items-center">
+                <h2 class="col-5 offset-1 text-light text-start">MY COOL SITE</h2>
+                <h3 class="col-5 text-light text-end">My cool site is here to give you my cool site.</h3>
+                <div class="col-1"><!-- filler div --></div>
             </div>
 
             <!-- NOTE legal -->
