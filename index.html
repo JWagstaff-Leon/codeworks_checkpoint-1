@@ -39,7 +39,7 @@
     <body>
     <header>
         <!-- NOTE nav -->
-        <nav class="navbar bg-primary text-light fixed-top">
+        <nav class="navbar bg-primary text-light sticky-top">
             <div class="container-fluid">
                 <div class="navbar-brand">
                     <!-- TODO add image -->
@@ -56,21 +56,28 @@
             <div class="container">
                 <div class="row align-items-center">
                     <!-- hero form -->
-                    <h4 class="text-dark">Subtle Heading</h4>
-                    <div class="col-12 col-md-3 hero-form p-4">
-                        <form action="">
-                            <h4 class="text-primary">Less Subtle Heading</h4>
-                            <input type="text" name="name" id="" placeholder="NAME" required>
-                            <input type="text" name="email" id="" placeholder="EMAIL" required>
-                            <input type="number" name="phone" id="" placeholder="PHONE">
-                            <input type="text" name="message" id="" placeholder="MESSAGE">
-                            <input type="checkbox" name="acceptance" id="" required>
-                            <input type="submit" value="">
-                        </form>
+                    <div class="col-12 col-md-5 hero-form">
+                        <h4 class="form-heading ps-1 pt-3">Feedback but gray</h4>
+                        <div class="hero-form-card p-4 flex-grow-1">
+                            <form action="">
+                                <h4 class="text-primary">Feedback</h4>
+                                <div class="row px-4 mt-4">
+                                    <input type="text" name="name" id="" placeholder="NAME" class="col-12" required>
+                                    <input type="text" name="email" id="" placeholder="EMAIL" class="col-12" required>
+                                    <input type="text" name="phone" id="" placeholder="PHONE" class="col-7">
+                                    <input type="text" name="extension" id="" placeholder="EXT" class="col-4 offset-1">
+                                    <input type="text" name="message" id="" placeholder="MESSAGE" class="col-12 flex-grow-1" required>
+                                    <div class="d-flex justify-content-between">
+                                        <input type="checkbox" name="acceptance" id="" required>
+                                        <input type="submit" value="Send">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     
                     <!-- hero text -->
-                    <div class="col-md-9 d-md-none hero-text">
+                    <div class="col-md-7 d-md-none hero-text">
                         <div class="hero-text-bar"></div>
                         <h2>Hero text over image heading</h2>
                         <h3>hero text over image text</h3>
@@ -137,20 +144,24 @@
         <!-- NOTE quotes -->
         <section id="quotes">
             <div class="container-fluid my-5">
-                <div class="row align-items-center">
+                <div class="row align-items-center text-center">
                     <div class="col-12 col-md-4 px-3 my-3 my-md-1">
-                        <div class="quote-big p-3">
-                            1Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit repellat neque pariatur atque! Iure, quae!
+                        <div class="quote-big p-4 d-flex flex-column justify-content-around">
+                            <p class="text-primary"><i class="mdi mdi-star mdi-48px"></i><i class="mdi mdi-star mdi-48px"></i><i class="mdi mdi-star mdi-48px"></i></p>
+                            <p>1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit repellat neque pariatur atque! Iure, quae!</p>
+                            <p class="text-primary">Lorem, ipsum dolor.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 order-md-first px-3 my-3 my-md-1">
-                        <div class="quote-small p-3">
-                            2Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi tempore, ad quo optio quod laboriosam, officia labore adipisci aliquid quasi similique unde ipsam! Perspiciatis?
+                        <div class="quote-small p-4 d-flex flex-column justify-content-around">
+                            <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi tempore, ad quo optio quod laboriosam, officia labore adipisci aliquid quasi similique unde ipsam! Perspiciatis?</p>
+                            <p class="text-primary">Lorem, ipsum dolor.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 order-md-last px-3 my-3 my-md-1">
-                        <div class="quote-small p-3">
-                            3Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloremque officia blanditiis fugit mollitia soluta!
+                        <div class="quote-small p-4 d-flex flex-column justify-content-around">
+                            <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloremque officia blanditiis fugit mollitia soluta!</p>
+                            <p class="text-primary">Lorem, ipsum dolor.</p>
                         </div>
                     </div>
                 </div>
@@ -160,16 +171,17 @@
     <footer class="pt-4">
         <div class="container-fluid">
             <!-- NOTE brand -->
-            <div class="row bg-primary">
-                <div class="col-12">
-                    
+            <div class="row bg-primary py-4">
+                <div class="col-10 offset-1 text-light">
+                    <h2>MY COOL SITE</h1>
+                    <h3>My cool site is here to give you my cool site.</h3>
                 </div>
             </div>
 
             <!-- NOTE legal -->
             <div class="row">
-                <div class="col-12">
-                    
+                <div class="col-12 text-primary text-center pt-4 pb-2">
+                    <h4>My cool site is a owned and operated by a certified cool dude.</h4>
                 </div>
             </div>
         </div>

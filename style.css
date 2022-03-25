@@ -19,9 +19,14 @@
     color: var(--primary) !important;
 }
 
+p
+{
+    margin: 0px;
+}
+
 #hero
 {
-    min-height: 60vh;
+    height: 100vh;
     /* TODO add an image */
     /* background-image: url(); */
     background-color: lightgray;
@@ -30,13 +35,33 @@
 
 #hero *[class*="row"], #hero *[class*="container"]
 {
-    min-height: 100%;
+    height: inherit;
 }
 
 .hero-form
 {
+    height: 75%;
+}
+
+.hero-form-card
+{
     background-color: rgba(240, 240, 240, 0.6);
     backdrop-filter: blur(15px);
+}
+
+#hero form
+{
+    height: 80%;
+}
+
+.form-heading
+{
+    color: rgba(80, 80, 80, 0.7);
+}
+
+input
+{
+    margin: 0.4em 0em;
 }
 
 .hero-text-bar
@@ -80,7 +105,8 @@
 #quotes div[class*="quote"]
 {
     filter: drop-shadow(2px 2px 5px rgba(32, 32, 32, 0.3));
-    background-color: white
+    background-color: white;
+    font-size: 1.1em;
 }
 
 .quote-big
@@ -91,11 +117,6 @@
 .quote-small
 {
     height: 32vh;
-}
-
-footer *[class*="row"]
-{
-    height: 12vh;
 }
 
 @media only screen and (max-width: 768px)
