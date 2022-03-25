@@ -10,78 +10,143 @@
 
         <!-- Bootstrap CSS v5.0.2 -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="../bootstrap_debug.css">
+        
+        <!-- TODO remove when done -->
+        <style>
+            .debug .container,
+            .debug .container-fluid
+            {
+                outline: 2px double blue;
+                outline-offset: -2px;
+            }
+
+            .debug .row
+            {
+                outline: 2px dashed red;
+                outline-offset: -2px;
+            }
+
+            .debug [class*="col-"]
+            {
+                outline: 2px dotted forestgreen;
+                outline-offset: -3px;
+            }
+        </style>
     </head>
     <body>
     <header>
         <!-- NOTE nav -->
-        <nav class="navbar bg-primary text-light position-sticky">
+        <nav class="navbar bg-primary text-light sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <div class="navbar-brand">
                     <!-- TODO add image -->
                     <img src="" alt="" class="d-inline-block align-text-top">
                     <!-- TODO site name -->
-                    <span>My Site</span>
-                </a>
+                    <span>Test</span>
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <!-- NOTE hero -->
-        <div id="hero" class="container">
-            <div class="row">
-                <!-- hero form -->
-                <div class="col-12 col-md-3">
+        <section id="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- hero form -->
+                    <h4 class="text-dark">Subtle Heading</h4>
+                    <div class="col-12 col-md-3 hero-form p-4">
+                        <form action="">
+                            <h4 class="text-primary">Less Subtle Heading</h4>
+                            <input type="text" name="name" id="" placeholder="NAME" required>
+                            <input type="text" name="email" id="" placeholder="EMAIL" required>
+                            <input type="number" name="phone" id="" placeholder="PHONE">
+                            <input type="text" name="message" id="" placeholder="MESSAGE">
+                            <input type="checkbox" name="acceptance" id="" required>
+                            <input type="submit" value="">
+                        </form>
+                    </div>
                     
-                </div>
-
-                <!-- hero text -->
-                <div class="col-md-9 d-md-none">
-
+                    <!-- hero text -->
+                    <div class="col-md-9 d-md-none hero-text">
+                        <div class="hero-text-bar"></div>
+                        <h2>Hero text over image heading</h2>
+                        <h3>hero text over image text</h3>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- NOTE contact -->
-
-        <div id="contact" class="container position-relative">
-            <div class="row">
-                <div class="col-12 col-md-5 order-2 order-md-1">
-
-                </div>
-                <div class="col-12 col-md-7 order-1 order-md-2 position-absolute">
-
+        <section id="contact" class="bg-primary">
+            <div class="container position-relative py-4">
+                <div class="row">
+                    <!-- contact text -->
+                    <div class="col-12 col-md-4 order-2 order-md-1 text-light d-flex flex-column justify-content-center">
+                        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, tenetur?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate magnam adipisci numquam atque molestiae at minus pariatur id, earum qui debitis odio repudiandae cumque exercitationem eos, et eius saepe?</p>
+                    </div>
+                    <!-- contact info -->
+                    <div class="col-12 col-md-7 offset-md-1 order-1 order-md-2 position-relative contact-info bg-light text-dark d-flex flex-column justify-content-around ps-3">
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-phone mdi-24px d-inline-block me-2"></i>
+                            <span>(000) 000-0000</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-email mdi-24px d-inline-block me-2"></i>
+                            <span>filler@mysite.com</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-car mdi-24px d-inline-block me-2"></i>
+                            <span>1234 Unreal St.</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-twitter mdi-24px d-inline-block me-2"></i>
+                            <span>@MySite</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-web mdi-24px d-inline-block me-2"></i>
+                            <span>You're already here... 🤔<!-- requisite emoji --></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </section>
+            
         <!-- NOTE about -->
-        <div id="about" class="container">
+        <section id="about" class="container">
             <div class="row">
+                <!-- about image -->
                 <div class="col-12 col-md-3">
-                    
+                    <img src="" alt="">
                 </div>
-                <div class="col-12 col-md-9">
-
+                <!-- about text -->
+                <div class="col-12 col-md-9 text-dark about-text">
+                    <h1><i class="mdi"></i>BIG TEXT ABOUT US</h1>
+                    <p>small text about us</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary text-light">MORE</button>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- NOTE quotes -->
-        <div id="quotes" class="container">
+        <section id="quotes" class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 quote-big">
 
                 </div>
-                <div class="col-12 col-md-4 order-md-first">
+                <div class="col-12 col-md-4 order-md-first quote-small">
 
                 </div>
-                <div class="col-12 col-md-4 order-md-last">
+                <div class="col-12 col-md-4 order-md-last quote-small">
 
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer class="container">
         <!-- NOTE brand -->

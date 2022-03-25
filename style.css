@@ -1,0 +1,83 @@
+:root
+{
+    --primary: #07AB80;
+    --light: #EEEEEE;
+}
+
+.bg-primary
+{
+    background-color: var(--primary) !important;
+}
+
+.bg-light
+{
+    background-color: var(--light) !important;
+}
+
+.text-primary
+{
+    color: var(--primary) !important;
+}
+
+#hero
+{
+    min-height: 100vh;
+    /* TODO add an image */
+    /* background-image: url(); */
+    background-color: lightgray;
+    background-size: cover;
+}
+
+#hero *[class*="row"], #hero *[class*="container"]
+{
+    min-height: 100%;
+}
+
+.hero-form
+{
+    background-color: rgba(240, 240, 240, 0.6);
+    backdrop-filter: blur(15px);
+}
+
+.hero-text-bar
+{
+    width: 3vw;
+    height: 80%;
+    background-color: var(--primary);
+}
+
+.hero-text
+{
+
+}
+
+#contact
+{
+    min-height: 40vh;
+}
+
+.contact-info
+{
+    top: 10vh;
+    min-height: 35vh;
+}
+
+.contact-info span
+{
+    font-size: 1.25em;
+}
+
+.about-text
+{
+
+}
+
+.quote-big
+{
+
+}
+
+.quote-small
+{
+
+}
