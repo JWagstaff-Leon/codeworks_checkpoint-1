@@ -39,7 +39,7 @@
     <body>
     <header>
         <!-- NOTE nav -->
-        <nav class="navbar bg-primary text-light sticky-top">
+        <nav class="navbar bg-primary text-light fixed-top">
             <div class="container-fluid">
                 <div class="navbar-brand">
                     <!-- TODO add image -->
@@ -81,10 +81,10 @@
 
         <!-- NOTE contact -->
         <section id="contact" class="bg-primary">
-            <div class="container position-relative py-4">
+            <div class="container position-relative py-3 py-md-4 px-4 px-md-0">
                 <div class="row">
                     <!-- contact text -->
-                    <div class="col-12 col-md-4 order-2 order-md-1 text-light d-flex flex-column justify-content-center">
+                    <div class="col-12 col-md-4 order-2 order-md-1 text-light d-flex flex-column justify-content-center pt-2 pt-md-0">
                         <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, tenetur?</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate magnam adipisci numquam atque molestiae at minus pariatur id, earum qui debitis odio repudiandae cumque exercitationem eos, et eius saepe?</p>
                     </div>
@@ -108,7 +108,7 @@
                         </div>
                         <div class="d-flex align-items-center">
                             <i class="mdi mdi-web mdi-24px d-inline-block me-2"></i>
-                            <span>You're already here... 🤔<!-- requisite emoji --></span>
+                            <span>You're already here... <a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/" target="_blank">🤔</a><!-- requisite emoji --></span>
                         </div>
                     </div>
                 </div>
@@ -116,50 +116,61 @@
         </section>
             
         <!-- NOTE about -->
-        <section id="about" class="container">
-            <div class="row">
-                <!-- about image -->
-                <div class="col-12 col-md-3">
-                    <img src="" alt="">
-                </div>
-                <!-- about text -->
-                <div class="col-12 col-md-9 text-dark about-text">
-                    <h1><i class="mdi"></i>BIG TEXT ABOUT US</h1>
-                    <p>small text about us</p>
-                </div>
-                <div>
-                    <button class="btn btn-primary text-light">MORE</button>
+        <section id="about">
+            <div class="container my-3">
+                <div class="row align-items-center pt-5">
+                    <!-- about image -->
+                    <div class="col-12 col-md-3 d-flex justify-content-center">
+                        <img src="placeholder350x600.png" alt="" class="img-fluid">
+                    </div>
+                    <!-- about text -->
+                    <div class="col-12 offset-md-1 col-md-8 text-dark about-text d-flex flex-column pt-5">
+                        <h1><i class="mdi"></i>BIG TEXT ABOUT US</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem cupiditate optio veniam, voluptatibus possimus corrupti recusandae magni dolorum eligendi reiciendis perferendis soluta. Eos cupiditate minus in, deserunt atque ut? Magni!
+                        Modi distinctio iure inventore impedit maiores dolorum repudiandae consequuntur quod commodi esse blanditiis eligendi quisquam minima aliquid perferendis, adipisci ipsa voluptatem! Libero, maiores nobis nesciunt vitae ipsam reiciendis voluptate laudantium?</p>
+                            <button class="btn bg-primary text-light align-self-end">MORE</button>
+                    </div>
                 </div>
             </div>
         </section>
-
+            
         <!-- NOTE quotes -->
-        <section id="quotes" class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-4 quote-big">
-
-                </div>
-                <div class="col-12 col-md-4 order-md-first quote-small">
-
-                </div>
-                <div class="col-12 col-md-4 order-md-last quote-small">
-
+        <section id="quotes">
+            <div class="container-fluid my-5">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4 px-3 my-3 my-md-1">
+                        <div class="quote-big p-3">
+                            1Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit repellat neque pariatur atque! Iure, quae!
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 order-md-first px-3 my-3 my-md-1">
+                        <div class="quote-small p-3">
+                            2Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi tempore, ad quo optio quod laboriosam, officia labore adipisci aliquid quasi similique unde ipsam! Perspiciatis?
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 order-md-last px-3 my-3 my-md-1">
+                        <div class="quote-small p-3">
+                            3Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloremque officia blanditiis fugit mollitia soluta!
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="container">
-        <!-- NOTE brand -->
-        <div class="row">
-            <div class="col-12">
-
+    <footer class="pt-4">
+        <div class="container-fluid">
+            <!-- NOTE brand -->
+            <div class="row bg-primary">
+                <div class="col-12">
+                    
+                </div>
             </div>
-        </div>
 
-        <!-- NOTE legal -->
-        <div class="row">
-            <div class="col-12">
-
+            <!-- NOTE legal -->
+            <div class="row">
+                <div class="col-12">
+                    
+                </div>
             </div>
         </div>
     </footer>

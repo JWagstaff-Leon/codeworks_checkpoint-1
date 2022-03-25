@@ -21,7 +21,7 @@
 
 #hero
 {
-    min-height: 100vh;
+    min-height: 60vh;
     /* TODO add an image */
     /* background-image: url(); */
     background-color: lightgray;
@@ -67,17 +67,51 @@
     font-size: 1.25em;
 }
 
+#about
+{
+    min-height: 40vh;
+}
+
 .about-text
 {
+    
+}
 
+#quotes div[class*="quote"]
+{
+    filter: drop-shadow(2px 2px 5px rgba(32, 32, 32, 0.3));
+    background-color: white
 }
 
 .quote-big
 {
-
+    height: 40vh;
 }
 
 .quote-small
 {
+    height: 32vh;
+}
 
+footer *[class*="row"]
+{
+    height: 12vh;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .contact-info
+    {
+        top: 0vh;
+    }
+}
+
+#contact a
+{
+    text-decoration: none;
+}
+
+#contact a:hover
+{
+    cursor: default;
 }
