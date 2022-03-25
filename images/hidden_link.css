@@ -1,0 +1,9 @@
+#contact a
+{
+    text-decoration: none;
+}
+
+#contact a:hover
+{
+    cursor: default;
+}

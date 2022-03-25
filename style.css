@@ -40,7 +40,7 @@ p
 
 .hero-form
 {
-    height: 75%;
+    height: 90%;
 }
 
 .hero-form-card
@@ -66,14 +66,15 @@ input
 
 .hero-text-bar
 {
-    width: 3vw;
-    height: 80%;
+    width: 5px;
+    height: 7vh;
     background-color: var(--primary);
 }
 
-.hero-text
+.hero-text-card
 {
-
+    background-color: rgba(210, 244, 255, 0.25);
+    backdrop-filter: blur(15px);
 }
 
 #contact
@@ -125,14 +126,4 @@ input
     {
         top: 0vh;
     }
-}
-
-#contact a
-{
-    text-decoration: none;
-}
-
-#contact a:hover
-{
-    cursor: default;
 }

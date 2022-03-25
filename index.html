@@ -6,6 +6,7 @@
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./images/hidden_link.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS v5.0.2 -->
@@ -13,33 +14,11 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
 
         <link rel="stylesheet" href="style.css">
-        
-        <!-- TODO remove when done -->
-        <style>
-            .debug .container,
-            .debug .container-fluid
-            {
-                outline: 2px double blue;
-                outline-offset: -2px;
-            }
-
-            .debug .row
-            {
-                outline: 2px dashed red;
-                outline-offset: -2px;
-            }
-
-            .debug [class*="col-"]
-            {
-                outline: 2px dotted forestgreen;
-                outline-offset: -3px;
-            }
-        </style>
     </head>
     <body>
     <header>
         <!-- NOTE nav -->
-        <nav class="navbar bg-primary text-light sticky-top">
+        <nav class="navbar bg-primary text-light fixed-top">
             <div class="container-fluid">
                 <div class="navbar-brand">
                     <!-- TODO add image -->
@@ -54,9 +33,9 @@
         <!-- NOTE hero -->
         <section id="hero">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center py-5">
                     <!-- hero form -->
-                    <div class="col-12 col-md-5 hero-form">
+                    <div class="col-12 col-md-4 hero-form">
                         <h4 class="form-heading ps-1 pt-3">Feedback but gray</h4>
                         <div class="hero-form-card p-4 flex-grow-1">
                             <form action="">
@@ -77,10 +56,12 @@
                     </div>
                     
                     <!-- hero text -->
-                    <div class="col-md-7 d-md-none hero-text">
-                        <div class="hero-text-bar"></div>
-                        <h2>Hero text over image heading</h2>
-                        <h3>hero text over image text</h3>
+                    <div class="col-md-7 offset-md-1 mt-5 p-4 d-none d-md-flex hero-text-card align-self-start align-items-center">
+                        <div class="hero-text-bar ms-1 me-4"></div>
+                        <div>
+                            <h2>Hero text over image heading</h2>
+                            <h3>hero text over image text</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,7 +109,7 @@
                 <div class="row align-items-center pt-5">
                     <!-- about image -->
                     <div class="col-12 col-md-3 d-flex justify-content-center">
-                        <img src="placeholder350x600.png" alt="" class="img-fluid">
+                        <img src=".images/placeholder350x600.png" alt="" class="img-fluid">
                     </div>
                     <!-- about text -->
                     <div class="col-12 offset-md-1 col-md-8 text-dark about-text d-flex flex-column pt-5">
