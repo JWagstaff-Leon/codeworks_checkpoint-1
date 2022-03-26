@@ -47,18 +47,13 @@ p
 
 .hero-form
 {
-    height: 90%;
+    height: 95%;
 }
 
 .hero-form-card
 {
-    background-color: rgba(240, 240, 240, 0.6);
-    backdrop-filter: blur(15px);
-}
-
-#hero form
-{
-    height: 80%;
+    background-color: rgba(226, 243, 219, 0.1);
+    backdrop-filter: blur(4px);
 }
 
 .form-heading
@@ -70,7 +65,7 @@ input, textarea
 {
     margin: 0.4em 0em;
     border-radius: 5px;
-    border: 2px solid #3b0a6480;
+    border: 2px solid rgba(40, 40, 40, 0.5);
 }
 
 textarea
@@ -87,8 +82,8 @@ textarea
 
 .hero-text-card
 {
-    background-color: #3b0a6430;
-    backdrop-filter: blur(15px);
+    background-color: #3b0a6460;
+    backdrop-filter: blur(4px);
 }
 
 #contact
@@ -143,14 +138,14 @@ header i, header span
 {
     position: relative;
     animation-name: sunglasses;
-    animation-duration: 1.1s;
+    animation-duration: 1.7s;
     animation-timing-function: ease-out;
 }
 
 header>*
 {
     animation-name: sunglasses;
-    animation-duration: 0.5s;
+    animation-duration: 0.9s;
     animation-timing-function: ease-out;
 }
 

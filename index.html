@@ -11,6 +11,8 @@
         <!-- Bootstrap CSS v5.0.2 -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+        <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet"> 
@@ -40,30 +42,32 @@
                     <div class="col-12 col-md-4 hero-form">
                         <h4 class="form-heading ps-1 pt-3">Feedback but gray</h4>
                         <div class="hero-form-card p-4 flex-grow-1">
-                            <form action="">
+                            <form action="" class="flex-grow-1 d-flex flex-column">
                                 <h4 class="text-primary custom-font">Feedback</h4>
-                                <div class="row px-4 mt-4">
-                                    <input type="text" name="name" id="" placeholder="NAME" class="col-12" required>
-                                    <input type="email" name="email" id="" placeholder="EMAIL" class="col-12" required>
-                                    <input type="tel" name="phone" id="" placeholder="PHONE" class="col-7">
-                                    <input type="text" name="extension" id="" placeholder="EXT" class="col-4 offset-1">
-                                    <textarea type="text" name="message" id="" placeholder="MESSAGE" class="col-12 flex-grow-1 mb-2" required></textarea>
-                                    <div class="d-flex justify-content-between">
+                                <div class="row px-4 mt-4 form-inputs">
+                                        <input type="text" name="name" id="" placeholder="NAME" class="col-12" required>
+                                        <input type="email" name="email" id="" placeholder="EMAIL" class="col-12" required>
+                                        <input type="tel" name="phone" id="" placeholder="PHONE" class="col-7">
+                                        <input type="text" name="extension" id="" placeholder="EXT" class="col-4 offset-1">
+                                        <textarea type="text" name="message" id="" placeholder="MESSAGE" class="col-12 flex-grow-1 mb-2" required></textarea>
+                                    </div>
+                                    <div class="flex-grow-1"></div>
+                                    <div class="d-flex justify-content-between align-items-center checkboxes">
                                         <input type="checkbox" name="acceptance" id="" required>
-                                        <label for="acceptance" class="mx-2">I agree that my message is not uncool, and that I send it in the spirit of coolness.</label>
+                                        <label for="acceptance" class="ms-4 me-3 text-light">I agree that my message is not uncool, and that I send it in the spirit of coolness.</label>
                                         <input type="submit" class="btn btn-primary text-light custom-font" value="Send">
                                     </div>
                                 </div>
                             </form>
                         </div>
-                    </div>
-                    
-                    <!-- hero text -->
-                    <div class="col-md-7 offset-md-1 mt-5 p-4 d-none d-md-flex hero-text-card text-light align-self-start align-items-center">
-                        <div class="hero-text-bar ms-1 me-4"></div>
-                        <div>
-                            <h2 class="custom-font">Hero text over image heading</h2>
-                            <h3>hero text over image text</h3>
+                        
+                        <!-- hero text -->
+                        <div class="col-md-7 offset-md-1 mt-5 p-4 d-none d-md-flex hero-text-card text-light align-self-start align-items-center">
+                            <div class="hero-text-bar ms-1 me-4"></div>
+                            <div>
+                                <h2 class="custom-font">Welcome to the coolest site on the internet</h2>
+                                <h4>If you're reading this, you're pretty cool.</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,7 +104,7 @@
                         </div>
                         <div class="d-flex align-items-center" title="website">
                             <i class="mdi mdi-web mdi-24px d-inline-block me-2"></i>
-                            <span>You're already here... <a href="https://www.youtube.com/watch?v=_WtpIL_cY_g" target="_blank" title="what're you looking at?">🤔</a><!-- requisite emoji --></span>
+                            <span>You're already here <a href="https://www.youtube.com/watch?v=_WtpIL_cY_g" target="_blank" title="what're you looking at?">😎</a><!-- requisite emoji --></span>
                         </div>
                     </div>
                 </div>
@@ -121,7 +125,8 @@
                         <h1 class="custom-font"><i class="mdi"></i>BIG TEXT ABOUT US</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem cupiditate optio veniam, voluptatibus possimus corrupti recusandae magni dolorum eligendi reiciendis perferendis soluta. Eos cupiditate minus in, deserunt atque ut? Magni!
                         Modi distinctio iure inventore impedit maiores dolorum repudiandae consequuntur quod commodi esse blanditiis eligendi quisquam minima aliquid perferendis, adipisci ipsa voluptatem! Libero, maiores nobis nesciunt vitae ipsam reiciendis voluptate laudantium?</p>
-                            <button class="btn bg-primary text-light align-self-end">MORE</button>
+                        <!-- TODO touch up this guy -->
+                        <button class="btn bg-primary text-light align-self-end">MORE</button>
                     </div>
                 </div>
             </div>
@@ -158,9 +163,9 @@
         <div class="container-fluid">
             <!-- NOTE brand -->
             <div class="row bg-primary py-4 justify-content-between align-items-center">
-                <h2 class="col-5 offset-1 text-light text-start">MY COOL SITE</h2>
-                <h3 class="col-5 text-light text-end">My cool site is here to give you my cool site.</h3>
-                <div class="col-1"><!-- filler div --></div>
+                <h2 class="col-12 col-md-5 offset-0 offset-md-1 text-light text-start">MY COOL SITE</h2>
+                <h3 class="col-12 col-md-5 text-light text-start text-md-end mt-2 mt-md-0">My cool site is here to give you my cool site.</h3>
+                <div class="col-0 col-md-1"><!-- filler div --></div>
             </div>
 
             <!-- NOTE legal -->
