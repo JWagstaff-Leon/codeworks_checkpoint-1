@@ -15,7 +15,8 @@
         <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="style.css">
     </head>
@@ -26,24 +27,22 @@
             <div class="container-fluid">
                 <div class="navbar-brand">
                     <i class="d-inline-block align-text-center mdi mdi-sunglasses mdi-24px me-3"></i>
-                    <span class="custom-font">My Cool Site</span>
+                    <span>My Cool Site</span>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <!-- NOTE hero -->
-        <!-- TODO add background image -->
         <section id="hero">
             <div class="container-fluid">
                 <div class="row align-items-center py-5">
-                    <!-- TODO make this form play nice more -->
                     <!-- hero form -->
                     <div class="col-12 col-md-4 hero-form">
                         <h4 class="form-heading ps-1 pt-3">Feedback but gray</h4>
                         <div class="hero-form-card p-4 flex-grow-1">
                             <form action="" class="flex-grow-1 d-flex flex-column">
-                                <h4 class="text-primary custom-font">Feedback</h4>
+                                <h4 class="text-primary custom-header-font">Feedback</h4>
                                 <div class="row px-4 mt-4 form-inputs">
                                         <input type="text" name="name" id="" placeholder="NAME" class="col-12" required>
                                         <input type="email" name="email" id="" placeholder="EMAIL" class="col-12" required>
@@ -55,7 +54,7 @@
                                     <div class="d-flex justify-content-between align-items-center checkboxes">
                                         <input type="checkbox" name="acceptance" id="" required>
                                         <label for="acceptance" class="ms-4 me-3 text-light">I agree that my message is not uncool, and that I send it in the spirit of coolness.</label>
-                                        <input type="submit" class="btn btn-primary text-light custom-font" value="Send">
+                                        <input type="submit" class="btn btn-primary text-light" value="Send">
                                     </div>
                                 </div>
                             </form>
@@ -65,7 +64,7 @@
                         <div class="col-md-7 offset-md-1 mt-5 p-4 d-none d-md-flex hero-text-card text-light align-self-start align-items-center">
                             <div class="hero-text-bar ms-1 me-4"></div>
                             <div>
-                                <h2 class="custom-font">Welcome to the coolest site on the internet</h2>
+                                <h2 class="custom-header-font">Welcome to the coolest site on the internet</h2>
                                 <h4>If you're reading this, you're pretty cool.</h4>
                             </div>
                         </div>
@@ -80,11 +79,11 @@
                 <div class="row">
                     <!-- contact text -->
                     <div class="col-12 col-md-4 order-2 order-md-1 text-light d-flex flex-column justify-content-center pt-2 pt-md-0">
-                        <h2 class="custom-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, tenetur?</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate magnam adipisci numquam atque molestiae at minus pariatur id, earum qui debitis odio repudiandae cumque exercitationem eos, et eius saepe?</p>
+                        <h2 class="custom-header-font">Not getting enough coolness just from this site?</h2>
+                        <p>This site is pretty cool; but 100% of our coolness can't be contained in this site alone. If you require more concentrated coolness, check out some of our other physical and internet presences.</p>
                     </div>
                     <!-- contact info -->
-                    <div class="col-12 col-md-7 offset-md-1 order-1 order-md-2 position-relative contact-info bg-light text-dark d-flex flex-column justify-content-around ps-3 custom-font">
+                    <div class="col-12 col-md-7 offset-md-1 order-1 order-md-2 position-relative contact-info bg-light text-dark d-flex flex-column justify-content-around ps-3">
                         <div class="d-flex align-items-center" title="phone">
                             <i class="mdi mdi-phone mdi-24px d-inline-block me-2"></i>
                             <span>(000) 000-0000</span>
@@ -116,17 +115,25 @@
             <div class="container my-3">
                 <div class="row align-items-center pt-5">
                     <!-- about image -->
+                    <!-- TODO make this a video -->
                     <div class="col-12 col-md-3 d-flex justify-content-center">
                         <img src="./images/placeholder350x600.png" alt="" class="img-fluid">
                     </div>
                     <!-- about text -->
                     <div class="col-12 offset-md-1 col-md-8 text-dark about-text d-flex flex-column pt-5">
                         <!-- TODO add an icon here -->
-                        <h1 class="custom-font"><i class="mdi"></i>BIG TEXT ABOUT US</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem cupiditate optio veniam, voluptatibus possimus corrupti recusandae magni dolorum eligendi reiciendis perferendis soluta. Eos cupiditate minus in, deserunt atque ut? Magni!
-                        Modi distinctio iure inventore impedit maiores dolorum repudiandae consequuntur quod commodi esse blanditiis eligendi quisquam minima aliquid perferendis, adipisci ipsa voluptatem! Libero, maiores nobis nesciunt vitae ipsam reiciendis voluptate laudantium?</p>
-                        <!-- TODO touch up this guy -->
-                        <button class="btn bg-primary text-light align-self-end">MORE</button>
+                        <h1 class="custom-header-font"><i class="mdi"></i>BIG TEXT ABOUT US</h1>
+                        <p>Some people wonder how we got so cool; those people are pretty cool by association, but we don't just give our coolness out for free.</p>
+                        <p>However, to give you a little sip, here's some tips to increase your coolness today:</p>
+                        <ol class="mt-2 mb-0">
+                            <li>Don't get licked.</li>
+                        </ol>
+                        <ul>
+                            <li>Remember to use semicolons; this doesn't apply only to coding.</li>
+                            <li>Sunglasses are optional, but should not be discounted as just a cliche.</li>
+                            <li>Remember the <a href="https://mbmbam.fandom.com/wiki/Barack_Obama" target="_blank">midnight amendments.</a></li>
+                        </ul>
+                        <button class="btn btn-primary text-light align-self-end me-5 mt-5">REGISTER FOR COOL LESSONS</button>
                     </div>
                 </div>
             </div>
@@ -139,20 +146,20 @@
                     <div class="col-12 col-md-4 px-3 my-3 my-md-1">
                         <div class="quote-big p-4 d-flex flex-column justify-content-around">
                             <p class="text-primary"><i class="mdi mdi-sunglasses mdi-48px mx-2"></i><i class="mdi mdi-sunglasses mdi-48px mx-2"></i><i class="mdi mdi-sunglasses mdi-48px mx-2"></i></p>
-                            <p class="custom-font">1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit repellat neque pariatur atque! Iure, quae!</p>
-                            <p class="text-primary">Lorem, ipsum dolor.</p>
+                            <p>The second I signed up for cool lessons, all my friends contacted me simultaneously and told me how cool they've always found me.</p>
+                            <p class="text-primary quote-name">- A man too cool for a name</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 order-md-first px-3 my-3 my-md-1">
                         <div class="quote-small p-4 d-flex flex-column justify-content-around">
-                            <p class="custom-font">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi tempore, ad quo optio quod laboriosam, officia labore adipisci aliquid quasi similique unde ipsam! Perspiciatis?</p>
-                            <p class="text-primary">Lorem, ipsum dolor.</p>
+                            <p>I don;t know how I got here, but they won't let me leave until I tell them they're cool.</p>
+                            <p class="custom-header-font fs-4 text-primary quote-name">WE DO NOT SPEAK OF THEM ANYMORE</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 order-md-last px-3 my-3 my-md-1">
                         <div class="quote-small p-4 d-flex flex-column justify-content-around">
-                            <p class="custom-font">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloremque officia blanditiis fugit mollitia soluta!</p>
-                            <p class="text-primary">Lorem, ipsum dolor.</p>
+                            <p>I consider myself a good judge of coolness, and let me tell you: these guys are the coolest I've ever seen.</p>
+                            <p class="text-primary quote-name">- We didn't pay them to say this.</p>
                         </div>
                     </div>
                 </div>
@@ -163,15 +170,15 @@
         <div class="container-fluid">
             <!-- NOTE brand -->
             <div class="row bg-primary py-4 justify-content-between align-items-center">
-                <h2 class="col-12 col-md-5 offset-0 offset-md-1 text-light text-start">MY COOL SITE</h2>
-                <h3 class="col-12 col-md-5 text-light text-start text-md-end mt-2 mt-md-0">My cool site is here to give you my cool site.</h3>
+                <h2 class="col-12 col-md-5 offset-0 offset-md-1 mb-0 text-light text-start">MY COOL SITE</h2>
+                <h3 class="col-12 col-md-5 mb-0 text-light text-start text-md-end mt-2 mt-md-0">My cool site is here to give you my cool site.</h3>
                 <div class="col-0 col-md-1"><!-- filler div --></div>
             </div>
 
             <!-- NOTE legal -->
             <div class="row">
                 <div class="col-12 text-primary text-center pt-4 pb-1">
-                    <h6 class="custom-font">My cool site is owned and operated by a certified cool site owner.</h6>
+                    <h6 class="custom-header-font">My cool site is owned and operated by a certified cool site owner.</h6>
                 </div>
             </div>
         </div>
