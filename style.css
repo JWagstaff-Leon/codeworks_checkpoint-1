@@ -66,7 +66,7 @@ nav button
 
 .hero-form
 {
-    height: 95%;
+    height: 90%;
 }
 
 .hero-form-card
@@ -124,6 +124,11 @@ textarea
 #about
 {
     min-height: 40vh;
+}
+
+#about img
+{
+    
 }
 
 #about a
