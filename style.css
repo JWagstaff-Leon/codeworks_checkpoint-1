@@ -126,11 +126,6 @@ textarea
     min-height: 40vh;
 }
 
-#about img
-{
-    
-}
-
 #about a
 {
     color: var(--primary);
