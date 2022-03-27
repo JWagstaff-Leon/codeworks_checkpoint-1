@@ -38,6 +38,17 @@ p
     margin: 0px;
 }
 
+header .text-light *, header .text-light *:hover
+{
+    color: var(--bs-light);
+    text-decoration: none;
+}
+
+nav button
+{
+    border: 2px solid var(--bs-light);
+}
+
 #hero
 {
     height: 100vh;
@@ -115,7 +126,7 @@ textarea
     min-height: 40vh;
 }
 
-a
+#about a
 {
     color: var(--primary);
 }
@@ -157,7 +168,7 @@ a:hover
     font-family: 'Heebo', sans-serif;
 }
 
-header i, header span
+header i, header a>span, header ul
 {
     position: relative;
     animation-name: sunglasses;
@@ -176,9 +187,9 @@ header>*
 {
     from
     {
-        top: -100px
+        top: -100px;
     }
-
+    
     to
     {
         top: 0px;
@@ -191,4 +202,10 @@ header>*
     {
         top: 0vh;
     }
+    
+    header ul
+    {
+        animation: none;
+    }
+
 }

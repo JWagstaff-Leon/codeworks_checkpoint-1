@@ -23,11 +23,27 @@
     <body>
     <header>
         <!-- NOTE nav -->
-        <nav class="navbar bg-primary text-light fixed-top">
+        <nav class="navbar navbar-expand-md bg-primary text-light fixed-top">
             <div class="container-fluid">
-                <div class="navbar-brand">
+                <a href="#hero" class="navbar-brand">
                     <i class="d-inline-block align-text-center mdi mdi-sunglasses mdi-24px me-3"></i>
                     <span>My Cool Site</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-list">
+                    <span class="navbar-toggler-icon text-light d-flex align-items-center justify-content-center"><i class="mdi mdi-menu"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-list">
+                    <ul class="navbar-nav ms-auto">
+                        <a href="#contact" class="px-2 mx-md-2 nav-link">
+                            <li class="navitem navbar-text">Contact</li>
+                        </a>
+                        <a href="#about" class="px-2 mx-md-2 nav-link">
+                            <li class="navitem navbar-text">About Us</li>
+                        </a>
+                        <a href="#quotes" class="px-2 mx-md-2 nav-link">
+                            <li class="navitem navbar-text">Testimonials</li>
+                        </a>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -121,9 +137,8 @@
                     </div>
                     <!-- about text -->
                     <div class="col-12 offset-md-1 col-md-8 text-dark about-text d-flex flex-column pt-5">
-                        <!-- TODO add an icon here -->
                         <h1 class="custom-header-font"><i class="mdi"></i>BIG TEXT ABOUT US</h1>
-                        <p>Some people wonder how we got so cool; those people are pretty cool by association, but we don't just give our coolness out for free.</p>
+                        <p><i class="mdi mdi-finance mdi-36px text-primary d-inline align-text-bottom me-2"></i>Some people wonder how we got so cool; those people are pretty cool by association, but we don't just give our coolness out for free.</p>
                         <p>However, to give you a little sip, here's some tips to increase your coolness today:</p>
                         <ol class="mt-2 mb-0">
                             <li>Don't get licked.</li>
@@ -133,7 +148,7 @@
                             <li>Sunglasses are optional, but should not be discounted as just a cliche.</li>
                             <li>Remember the <a href="https://mbmbam.fandom.com/wiki/Barack_Obama" target="_blank">midnight amendments.</a></li>
                         </ul>
-                        <button class="btn btn-primary text-light align-self-end me-5 mt-5">REGISTER FOR COOL LESSONS</button>
+                        <button class="btn btn-primary text-light align-self-center align-self-md-end me-md-5 mt-5">REGISTER FOR COOL LESSONS</button>
                     </div>
                 </div>
             </div>
@@ -146,20 +161,20 @@
                     <div class="col-12 col-md-4 px-3 my-3 my-md-1">
                         <div class="quote-big p-4 d-flex flex-column justify-content-around">
                             <p class="text-primary"><i class="mdi mdi-sunglasses mdi-48px mx-2"></i><i class="mdi mdi-sunglasses mdi-48px mx-2"></i><i class="mdi mdi-sunglasses mdi-48px mx-2"></i></p>
-                            <p>The second I signed up for cool lessons, all my friends contacted me simultaneously and told me how cool they've always found me.</p>
-                            <p class="text-primary quote-name">- A man too cool for a name</p>
+                            <p>I consider myself a good judge of coolness, and let me tell you: these guys are the coolest I've ever seen.</p>
+                            <p class="text-primary quote-name">- We didn't pay them to say this.</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 order-md-first px-3 my-3 my-md-1">
                         <div class="quote-small p-4 d-flex flex-column justify-content-around">
-                            <p>I don;t know how I got here, but they won't let me leave until I tell them they're cool.</p>
+                            <p>I don't know how I got here, but they won't let me leave until I tell them they're cool.</p>
                             <p class="custom-header-font fs-4 text-primary quote-name">WE DO NOT SPEAK OF THEM ANYMORE</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 order-md-last px-3 my-3 my-md-1">
                         <div class="quote-small p-4 d-flex flex-column justify-content-around">
-                            <p>I consider myself a good judge of coolness, and let me tell you: these guys are the coolest I've ever seen.</p>
-                            <p class="text-primary quote-name">- We didn't pay them to say this.</p>
+                            <p>The second I signed up for cool lessons, all my friends contacted me simultaneously and told me how cool they've always found me.</p>
+                            <p class="text-primary quote-name">- A man too cool for a name</p>
                         </div>
                     </div>
                 </div>
